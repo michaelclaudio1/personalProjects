@@ -22,28 +22,24 @@ const Header = () => {
 
   return (
     <div className={styles.grid}>
-      <h3 className={styles.title}>Plaid Quickstart</h3>
+      <h3 className={styles.title}>MyFi: Powered by Plaid</h3>
 
       {!linkSuccess ? (
         <>
           <h4 className={styles.subtitle}>
-            A sample end-to-end integration with Plaid
+            Personal Finance Tracker
           </h4>
           <p className={styles.introPar}>
-            The Plaid flow begins when your user wants to connect their bank
-            account to your app. Simulate this by clicking the button below to
-            launch Link - the client-side component that your users will
-            interact with in order to link their accounts to Plaid and allow you
-            to access their accounts via the Plaid API.
+            {/* DESCRIPTION PARAGRAPH TAG */}
           </p>
-          {/* message if backend is not running and there is no link token */}
+          {/* Notify if backend is not running and there is no link token */}
           {!backend ? (
             <Callout warning>
               Unable to fetch link_token: please make sure your backend server
               is running and that your .env file has been configured with your
               <code>PLAID_CLIENT_ID</code> and <code>PLAID_SECRET</code>.
             </Callout>
-          ) : /* message if backend is running and there is no link token */
+          ) : /* Notify if backend is running but there is no link token */
           linkToken == null && backend ? (
             <Callout warning>
               <div>

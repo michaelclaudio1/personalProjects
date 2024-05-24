@@ -13,9 +13,7 @@ const cors = require('cors');
 
 const APP_PORT = process.env.APP_PORT || 8000;
 const PLAID_CLIENT_ID = process.env.PLAID_CLIENT_ID;
-// const PLAID_CLIENT_ID = "664e2e113520e3001c756317";
 const PLAID_SECRET = process.env.PLAID_SECRET;
-// const PLAID_SECRET = "a81d1914cdadfdb1450906c4cfce45";
 const PLAID_ENV = process.env.PLAID_ENV || 'sandbox';
 
 // PLAID_PRODUCTS is a comma-separated list of products to use when initializing
