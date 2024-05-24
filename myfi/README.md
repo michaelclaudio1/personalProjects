@@ -1,0 +1,1 @@
+MyFi personal application to track all money information across my accounts. Includes Chase, South State and Marcus Savings (Avantax Money is not included)
